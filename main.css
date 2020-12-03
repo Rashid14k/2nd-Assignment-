@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+
+}
+.logo {
+    width: 50px;
+    height: 50px;
+
+}
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    color: white;
+    background-color:red;
+    
+    
+}
+.sidenav {
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.sidenav .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar-links {
+        /*display: none;*/
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .logo {
+        margin-left: 220px;
+    }
+    .img1 {
+        display: none;
+    }
+}
+ .img1 {
+     max-width: 100%;
+     max-height: 100%;
+ }
+ h1 {
+     text-align: center;
+ }
+ .roundimgs{
+     border-radius: 50%;
+     width: 150px;
+     height: 150px;
+     display: inline;
+     box-shadow: 0px 10px 5px 2px rgba(0,0,0,0.2);
+ }
+ .row1 {
+     margin: auto;
+
+ }
+ .column {
+     float: left;;
+     text-align: center;
+     padding: 5px;
+    
+ }
+ @font-face {
+     font-family: YeonSung-Regular;
+     src: url('./Fonts/YeonSung-Regular.ttf');
+ }
+ @font-face {
+     font-family: Miniver-Regular;
+     src: url('./Fonts/Miniver-Regular.ttf');
+ }
+ div > h1 {
+     font-family: YeonSung-Regular;
+     font-style: italic;
+ }
+ div p {
+     font-family: YeonSung-Regular;
+
+ }
+ 
